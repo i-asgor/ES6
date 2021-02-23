@@ -1,10 +1,6 @@
 import '../styles/index.scss'
 
-import { sum, sub  } from './math'
-
-console.log('Hello Webpack 4')
-
-console.log(sum(10, 20))
-console.log(sub(10, 20))
-
-alert('Yes, I am ok')
+var age= 30
+var name = "Md. Asgor Ali"
+console.log('my name is '+name + ' and  my age is '+age+' years old')
+console.log(`My name is ${name} and my age is ${age} years old. I am ${age<18?'not ':''} adult`)
