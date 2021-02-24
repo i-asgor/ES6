@@ -34,14 +34,16 @@ function testMe(){
 	console.log(this)
 }
 
+testMe()
+
 let obj = {
 	name:'Asgor',
-	print:function(){
+	print: () => {
 		console.log(this)
 	}
 }
 
-testMe()
+
 obj.print()
 
 
