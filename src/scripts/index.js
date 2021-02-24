@@ -7,11 +7,31 @@ console.log(`My name is ${name} and my age is ${age} years old. I am ${age<18?'n
 
 console.log(name.padStart(15,'*'))
 console.log(name.padEnd(15,'a'))
-console.log('S'.repeat(10))
+// console.log('S'.repeat(10))
 
-let a=10
-a = 100
-console.log(a)
+// let a=10
+// a = 100
+// console.log(a)
 
-const b=10
-console.log(b)
+// const b=10
+// console.log(b)
+
+// {
+
+// }
+
+// function add(a,b){
+// 	return a+b
+// }
+
+let add = (a,b) =>  a+b
+console.log(add(40,50))
+
+let sqr = x => x*x
+console.log(sqr(5))
+
+
+
+// let sum = function(a,b){
+// 	return a+b
+// }
