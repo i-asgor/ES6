@@ -30,6 +30,20 @@ console.log(add(40,50))
 let sqr = x => x*x
 console.log(sqr(5))
 
+function testMe(){
+	console.log(this)
+}
+
+let obj = {
+	name:'Asgor',
+	print:function(){
+		console.log(this)
+	}
+}
+
+testMe()
+obj.print()
+
 
 
 // let sum = function(a,b){
