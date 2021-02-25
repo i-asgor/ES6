@@ -73,12 +73,20 @@ import '../styles/index.scss'
 // 	return a+b
 // }
 
-function sqr(n=1){
-	// if(!n){
-	// 	n = 1
-	// }
-	// n = n||1
-	return n*n
+// function sqr(n=1){
+// 	// if(!n){
+// 	// 	n = 1
+// 	// }
+// 	// n = n||1
+// 	return n*n
+// }
+
+// console.log(sqr())
+
+function greet(name='asgor',msg='hello'){
+	console.log(name.length)
+	console.log(`${msg}! ${name}`)
 }
 
-console.log(sqr())
+greet(null,'Hello')
+// greet('Asgor','Hello')
