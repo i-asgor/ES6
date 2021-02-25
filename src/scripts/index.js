@@ -46,19 +46,27 @@ import '../styles/index.scss'
 
 // obj.print()
 
+// let obj = {
+// 	name: 'Md. Asgor Ali',
+// 	print: function(){
+// 		let self = this
+// 		setTimeout(function(){
+// 			console.log(this)
+// 			alert(`Hello, ${self.name}`)
+// 		},1000)
+// 	}
+// }
+// obj.print()
+
 let obj = {
 	name: 'Md. Asgor Ali',
 	print: function(){
-		let self = this
 		setTimeout(function(){
-			console.log(this)
-			alert(`Hello, ${self.name}`)
-		},1000)
+			alert(`Hello, ${this.name}`)
+		}.bind(this),1000)
 	}
 }
 obj.print()
-
-
 
 // let sum = function(a,b){
 // 	return a+b
