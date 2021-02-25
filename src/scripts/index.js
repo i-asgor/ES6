@@ -1,12 +1,12 @@
 import '../styles/index.scss'
 
-var age= 30
-var name = "Md. Asgor Ali"
-console.log('my name is '+name + ' and  my age is '+age+' years old')
-console.log(`My name is ${name} and my age is ${age} years old. I am ${age<18?'not ':''} adult`)
+// var age= 30
+// var name = "Md. Asgor Ali"
+// console.log('my name is '+name + ' and  my age is '+age+' years old')
+// console.log(`My name is ${name} and my age is ${age} years old. I am ${age<18?'not ':''} adult`)
 
-console.log(name.padStart(15,'*'))
-console.log(name.padEnd(15,'a'))
+// console.log(name.padStart(15,'*'))
+// console.log(name.padEnd(15,'a'))
 // console.log('S'.repeat(10))
 
 // let a=10
@@ -24,26 +24,38 @@ console.log(name.padEnd(15,'a'))
 // 	return a+b
 // }
 
-let add = (a,b) =>  a+b
-console.log(add(40,50))
+// let add = (a,b) =>  a+b
+// console.log(add(40,50))
 
-let sqr = x => x*x
-console.log(sqr(5))
+// let sqr = x => x*x
+// console.log(sqr(5))
 
-function testMe(){
-	console.log(this)
-}
+// function testMe(){
+// 	console.log(this)
+// }
 
-testMe.call({})
+// testMe.call({})
+
+// let obj = {
+// 	name:'Asgor',
+// 	print: () => {
+// 		console.log(this)
+// 	}
+// }
+
+
+// obj.print()
 
 let obj = {
-	name:'Asgor',
-	print: () => {
-		console.log(this)
+	name: 'Md. Asgor Ali',
+	print: function(){
+		let self = this
+		setTimeout(function(){
+			console.log(this)
+			alert(`Hello, ${self.name}`)
+		},1000)
 	}
 }
-
-
 obj.print()
 
 
