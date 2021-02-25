@@ -61,9 +61,10 @@ import '../styles/index.scss'
 let obj = {
 	name: 'Md. Asgor Ali',
 	print: function(){
-		setTimeout(function(){
-			alert(`Hello, ${this.name}`)
-		}.bind(this),1000)
+		setTimeout(() =>{
+			console.log(this)
+			console.log(`Hello, ${this.name}`)
+		},1000)
 	}
 }
 obj.print()
