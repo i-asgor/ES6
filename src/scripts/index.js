@@ -34,7 +34,7 @@ function testMe(){
 	console.log(this)
 }
 
-testMe()
+testMe.call({})
 
 let obj = {
 	name:'Asgor',
