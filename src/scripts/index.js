@@ -58,17 +58,27 @@ import '../styles/index.scss'
 // }
 // obj.print()
 
-let obj = {
-	name: 'Md. Asgor Ali',
-	print: function(){
-		setTimeout(() =>{
-			console.log(this)
-			console.log(`Hello, ${this.name}`)
-		},1000)
-	}
-}
-obj.print()
+// let obj = {
+// 	name: 'Md. Asgor Ali',
+// 	print: function(){
+// 		setTimeout(() =>{
+// 			console.log(this)
+// 			console.log(`Hello, ${this.name}`)
+// 		},1000)
+// 	}
+// }
+// obj.print()
 
 // let sum = function(a,b){
 // 	return a+b
 // }
+
+function sqr(n=1){
+	// if(!n){
+	// 	n = 1
+	// }
+	// n = n||1
+	return n*n
+}
+
+console.log(sqr())
