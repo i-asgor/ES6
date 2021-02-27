@@ -83,10 +83,22 @@ import '../styles/index.scss'
 
 // console.log(sqr())
 
-function greet(name='asgor',msg='hello'){
-	console.log(name.length)
-	console.log(`${msg}! ${name}`)
+// function greet(name='asgor',msg='hello'){
+// 	console.log(name.length)
+// 	console.log(`${msg}! ${name}`)
+// }
+
+// greet(null,'Hello')
+// greet('Asgor','Hello')
+
+function sum(){
+	let sum = 0
+
+	for (let i=0; i<arguments.length; i++){
+		sum += arguments[i]
+	}
+
+	return sum
 }
 
-greet(null,'Hello')
-// greet('Asgor','Hello')
+console.log(sum(1,2,3,4,5))
