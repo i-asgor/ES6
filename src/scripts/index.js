@@ -91,14 +91,20 @@ import '../styles/index.scss'
 // greet(null,'Hello')
 // greet('Asgor','Hello')
 
-function sum(){
-	let sum = 0
+// function sum(){
+// 	let sum = 0
 
-	for (let i=0; i<arguments.length; i++){
-		sum += arguments[i]
-	}
+// 	for (let i=0; i<arguments.length; i++){
+// 		sum += arguments[i]
+// 	}
 
-	return sum
+// 	return sum
+// }
+
+// console.log(sum(1,2,3,4,5))
+
+function sum(...rest){
+	return rest.reduce((a,b) => a+b)
 }
 
 console.log(sum(1,2,3,4,5))
