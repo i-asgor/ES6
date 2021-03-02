@@ -109,15 +109,27 @@ import '../styles/index.scss'
 
 // console.log(sum(1,2,3,4,5))
 
-let a= [1,2,3]
-console.log(...a)
+// let a= [1,2,3]
+// console.log(...a)
+
+// let obj = {
+// 	a:10,
+// 	b:20,
+// 	c:30
+// }
+
+// let obj2 = {
+// 	..obj
+// }
+
+let a =10, b=20
 
 let obj = {
-	a:10,
-	b:20,
-	c:30
+	a,
+	b,
+	print:function(){
+		console.log(this)
+	}
 }
 
-let obj2 = {
-	..obj
-}
+obj.print()
