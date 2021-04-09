@@ -122,14 +122,25 @@ import '../styles/index.scss'
 // 	..obj
 // }
 
-let a =10, b=20
+// let a =10, b=20
 
-let obj = {
-	a,
-	b,
-	print(){
-		console.log(this)
-	}
+// let obj = {
+// 	a,
+// 	b,
+// 	print(){
+// 		console.log(this)
+// 	}
+// }
+
+// obj.print()
+
+var person = {
+    name: 'Asgor Ali',
+    email: 'asgor.ice@gmail.com'
 }
 
-obj.print()
+// let name = person.name
+// let email = person.email
+let { name, email } = person
+
+console.log(name, email)
